@@ -78,7 +78,7 @@ class KarteikartenSammlung(BaseModel):
     karten: List[Karteikarte]
 #---Konfiguration mit eigenen Daten---
 if __name__ == "__main__":
-    GOOGLE_API_KEY = "AIzaSyCCZmIYNDEu-MAweTH1oTVVwaOv7-a7lsQ"
+    GOOGLE_API_KEY = "API-KEY"
     IMAGE_SOURCE_FOLDER = r"K:\mein_woerterbuch\Scans\Testscans"
     OUTPUT_JSON_FILE = r"K:\mein_woerterbuch\Ergebnisse\extrahierte_karteikarten_Test.json"
 
@@ -224,4 +224,5 @@ if __name__ == "__main__":
             print(f"Fehler beim Speichern der finalen JSON-Datei: {e}")
     else:
         print("\n--- 🏁 Verarbeitung abgeschlossen ---")
+
         print("Es wurden keine Karten aus den Bildern extrahiert.")
